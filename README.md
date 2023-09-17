@@ -1,4 +1,4 @@
-# DS_Vin_portugais
+# DS_Vin_portugais :wine_glass:
 
 Proposition de correction d'un exercice en machine learning donné lors de l'examen final 2023 au centre de formation continue ENSAE-ENSAE.
 
