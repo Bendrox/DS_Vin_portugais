@@ -26,7 +26,8 @@ library(tidyverse)
 library(ROSE)
 library(themis)
 library(FactoMineR)
-####################################################### Import data  
+
+### Import data  
 setwd("C:/Users/OussA/Downloads")
 df <- read_rds("vin.rds")
 
