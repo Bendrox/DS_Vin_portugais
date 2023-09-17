@@ -8,6 +8,7 @@ Le langage utilisé : R
 
 ![image](https://github.com/Bendrox/DS_Vin_portugais/assets/145064474/c0ccaf34-3b35-464f-bd47-c320a216f385)
 
+# I. Import librairies   
 
 library(readr)
 library(dplyr)
@@ -27,7 +28,7 @@ library(ROSE)
 library(themis)
 library(FactoMineR)
 
-# Import data  
+# II. Import data  
 setwd("C:/Users/OussA/Downloads")
 df <- read_rds("vin.rds")
 
@@ -40,7 +41,7 @@ glimpse(df) # ok pas de transfo a faire
 prop.table(table(df$quality)) # ok équilibre 
 levels(df$quality) <- c("No", "Yes") # je prefere No / Yes 
 
-# Analyse descriptive 
+# III. Analyse descriptive 
 df_x <- df %>% select(-quality) #df sans Y pour la suite
 
 ## Correlation des variables 
@@ -101,7 +102,7 @@ ggplot()+
   
 ### On arrive a visionner les 3 classes qui se dégagent en fonction des deux variables les plus contributrices aux 2 1eres dim de l'ACP
 
-# Modélisation avc tidymodels
+# IV. Modélisation avc tidymodels
 ## Phase 1: Decoupage   
 #Train/test
 df<- rename(df, target = quality) #renom quality en target 
