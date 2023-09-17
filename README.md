@@ -2,7 +2,7 @@
 
 Proposition de correction d'un exercice en machine learning donné lors de l'examen final 2023 au centre de formation continue ENSAE-ENSAE.
 
-La correction proposée est une extraction sans modification de la copie rendue.
+La correction proposée est une extraction sans modification (mise a part la nouvelle mise en page) de la copie rendue.
 
 Le langage utilisé : R
 
@@ -11,6 +11,7 @@ Le langage utilisé : R
 # I. Import librairies   
 
 library(readr)
+
 library(dplyr)
 library(foreign) 
 library(ranger)
@@ -95,6 +96,7 @@ clusters <- as.factor(km$cluster) # la classe attribuée
 table(clusters) # classes + effectif 
 centre <- as.data.frame(km$centers) # centre des classes 
 head(df_x)
+
 ggplot()+
   geom_point(data=df_x,aes(x=fixed.acidity,y=total.sulfur.dioxide,colour=clusters))+
   geom_point(data=centre,aes(x=fixed.acidity,y=total.sulfur.dioxide),shape=15,size=3)+
