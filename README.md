@@ -8,3 +8,5 @@ Proposition de correction d'un exercice en machine learning donné a l'examen fi
 La solution proposée est une extraction sans modification de la copie rendue.
 
 Le langage utilisé : R
+
+Grace a l'utilisation de Tidymodels, il a été possible de tester 10 algorithmes en utilisant 4 'recettes' (FE) et 20 combinaisons de paramètres soit 800 modèles. 
