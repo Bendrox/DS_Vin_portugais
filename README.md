@@ -1,12 +1,10 @@
 # DS_Vin_portugais :wine_glass:
 
-Proposition de correction d'un exercice en machine learning (classification supervisée) donné a l'examen final 2023 au centre de formation continue ENSAE-ENSAE.
+Les données traités dans cet exercice sont issues d'une analyse de vins portugais. Nous avons 11 variables potentiellement explicatives (comme l'acidité...) et la variable quality qui est la moyenne de note de 3 experts.
 
-![image](https://github.com/Bendrox/DS_Vin_portugais/assets/145064474/c0ccaf34-3b35-464f-bd47-c320a216f385)
+L'ojectif sera de trouver le meilleur modèle prédictif en jouant sur l'optimisation des hyperparamètres et en faisant du feature engineering. 
+
+Le langage utilisé sera R
 
 
-La solution proposée est une extraction sans modification de la copie rendue.
-
-Le langage utilisé : R
-
-Grace a l'utilisation de Tidymodels, il a été possible de tester 10 algorithmes en utilisant 4 'recettes' (FE) et 20 combinaisons de paramètres soit 800 modèles. 
+Nous privilégions l'utilisation de Tidymodels, grace auquel il sera possible de tester 10 algorithmes en utilisant 4 'recettes' (FE) et 20 combinaisons de paramètres soit 800 modèles. 
